@@ -35,14 +35,14 @@ class Home extends Component {
               </div>
               <div className="col-md-12">
                 
-                <h1 className="text-center" style={{"fontSize":"28px","fontWeight": "bold"}}>Interview for Estee Lanuder</h1>
+                <h1 className="text-center" style={{"fontSize":"20px","fontWeight": "bold"}}>Interview for Estee Lanuder</h1>
               </div>
             </div>
             
             <hr />
-            <button className="mx-auto d-block">Amanda</button>
-            <hr />
-              
+            
+            <p className="text-center">-- Tips for Amanda --</p>
+            
               <div className="card">
                 <div className="row">
                   <div className="col-md-6">
