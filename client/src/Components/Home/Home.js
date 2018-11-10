@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import lipstickImg from '../../Img/lipstick.png';
+import bannerImg from '../../Img/banner.png';
 
 class Home extends Component {
   render() {
@@ -20,21 +21,13 @@ class Home extends Component {
                 </div>
               </div>
               <div className="col-md-5">
-                <h1 style={{"font-size":"20px","font-weight": "bold"}}><strong>Fri </strong>Nov.11, 2018</h1>
+                <h1 style={{"font-size":"28px","font-weight": "bold"}}><strong>Fri </strong>Nov.11, 2018</h1>
               </div>
               <div className="col-md-6">
                 <p className="float-right" style={{"font-size":"20px","font-weight": "bold"}}>Partly Cloudy, Long Island City</p>
               </div>
-              <div className="col-md-9">
-                
-              </div>
-              <div className="col-md-3">
-                <div class="card">
-                  <div class="card-body">
-                    <p style={{"font-size":"20px","font-weight": "bold"}}>2:00pm</p>
-                    <p style={{"font-size":"20px","font-weight": "bold"}}>Gym</p>
-                  </div>
-                </div>
+              <div className="col-md-12">
+                <img className="img-fluid w-100" src={bannerImg} alt="Banner" />
               </div>
             </div>
             
