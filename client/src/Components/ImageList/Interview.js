@@ -10,22 +10,38 @@ class Interview extends Component {
     super(props);
     this.state = {
         showMore1: false,
-        showMoreProduct: false
+        showMore2: false,
+        showMore3: false,
+        showMore4: false
     };
   }
   
   render() {
-    const {showMore1} = this.state;
+    const {showMore1, showMore2, showMore3, showMore4} = this.state;
         
     let infor1;
+    let infor2;
+    let infor3;
+    let infor4;
     
-    if(showMore1){
-        infor1 = (
+    let detail = (
             <div className="inline">
               <button><i class="far fa-credit-card"></i>Online Shop</button>
               <button className="float-right"><i class="fas fa-shopping-cart"></i>Go to Store</button>
             </div>
         );
+    
+    if(showMore1){
+        infor1 = detail;
+    }
+    if(showMore2){
+        infor2 = detail;
+    }
+    if(showMore3){
+        infor3 = detail;
+    }
+    if(showMore4){
+        infor4 = detail;
     }
     
     
@@ -44,18 +60,36 @@ class Interview extends Component {
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="card p-1" style={{width: '18rem'}}>
-              <img className="card-img-top" style={{height: '220px'}} src={interview3Img} alt="interview3" />
+              <img className="card-img-top" style={{height: '220px'}} src={interview3Img} alt="interview3"
+              onClick={() => {
+                  this.setState(prevState => ({
+                      showMore2: !prevState.showMore2
+                  }));
+              }}/>
             </div>
+            {infor2}
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="card p-1" style={{width: '18rem'}}>
-              <img className="card-img-top" style={{height: '220px'}} src={interview4Img} alt="interview4" />
+              <img className="card-img-top" style={{height: '220px'}} src={interview4Img} alt="interview4"
+              onClick={() => {
+                  this.setState(prevState => ({
+                      showMore3: !prevState.showMore3
+                  }));
+              }}/>
             </div>
+            {infor3}
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="card p-1" style={{width: '18rem'}}>
-              <img className="card-img-top" style={{height: '220px'}} src={interview5Img} alt="interview5" />
+              <img className="card-img-top" style={{height: '220px'}} src={interview5Img} alt="interview5"
+              onClick={() => {
+                  this.setState(prevState => ({
+                      showMore4: !prevState.showMore4
+                  }));
+              }}/>
             </div>
+            {infor4}
           </div>
         </div>
     );
