@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './Home.css';
 
-import ImageList from '../ImageList/ImageList';
+import InterviewList from '../ImageList/Interview';
 
 import bannerImg from '../../Img/banner.png';
 import calcularImg from '../../Img/calcular.png';
@@ -17,19 +17,28 @@ class Home extends Component {
   constructor(props){
     super(props);
     this.state = {
-        showMore: false
+        showMoreInterview: false,
+        showMoreProduct: false
     };
   }
   
   render() {
-    const {showMore} = this.state;
+    const {showMoreInterview, showMoreProduct} = this.state;
         
-        let showImages;
+        let interviewImages;
+        let productImages;
         
-        if(showMore){
-            showImages = (
+        if(showMoreInterview){
+            interviewImages = (
                 <div>
-                  <ImageList />
+                  <InterviewList />
+                </div>
+            );
+        }
+        if(showMoreProduct){
+            productImages = (
+                <div>
+                  <InterviewList />
                 </div>
             );
         }
@@ -85,14 +94,14 @@ class Home extends Component {
                         type="button"
                         onClick={() => {
                         this.setState(prevState => ({
-                            showMore: !prevState.showMore
+                            showMoreInterview: !prevState.showMoreInterview
                         }));
                     }}className="btn btn-light">
                         See More
                     </button>
                   </div>
                 </div>
-                {showImages}
+                {interviewImages}
                 <hr />
                 <div className="row">
                   <div className="col-md-3">
@@ -105,8 +114,18 @@ class Home extends Component {
                       <p className="card-text">Quick, professional make up tips for office lady</p>
                       <span><i class="far fa-heart"></i></span>
                     </div>
+                    <button
+                        type="button"
+                        onClick={() => {
+                        this.setState(prevState => ({
+                            showMoreProduct: !prevState.showMoreProduct
+                        }));
+                    }}className="btn btn-light">
+                        See More
+                    </button>
                   </div>
                 </div>
+                {productImages}
                 <hr />
                 <div className="row">
                   <div className="col-md-3">
