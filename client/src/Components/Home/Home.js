@@ -34,7 +34,7 @@ class Home extends Component {
                 <p className="float-right" style={{"fontSize":"20px","fontWeight": "bold"}}>Partly Cloudy, Long Island City</p>
               </div>
               <div className="col-md-12">
-                <img className="m-0" id="bannerImg" src={bannerImg} alt="Banner" />
+                <img className="img-fluid w-100 m-0" id="bannerImg" src={bannerImg} alt="Banner" />
                 <img className="rounded mx-auto d-block" id="calcularImg" src={calcularImg} alt="Calrcular" />
               </div>
               <div className="col-md-12">
