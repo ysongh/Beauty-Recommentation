@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 
 import './Home.css';
 
-import lipstickImg from '../../Img/lipstick.png';
 import bannerImg from '../../Img/banner.png';
 import calcularImg from '../../Img/calcular.png';
+import interviewImg from '../../Img/interview.jpg';
+import makeupImg from '../../Img/makeup.png';
+import stressImg from '../../Img/stress.jpg';
 
 class Home extends Component {
   render() {
@@ -45,39 +47,41 @@ class Home extends Component {
             
               <div className="card">
                 <div className="row">
-                  <div className="col-md-6">
-                    <img className="card-img-top" src={lipstickImg} alt="LipStick" />
+                  <div className="col-md-3">
+                    <img className="card-img-top" id="pictureImg" src={interviewImg} alt="Interview" />
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-9">
                     <div className="card-body">
-                      <h5 className="card-title">OutFit for Today</h5>
-                      <p className="card-text">Bussiness Casual</p>
+                      <h5 className="card-title">BEST OUTFIT ASPIRES MY DAY</h5>
+                      <p className="card-text">What is My Best Business Casual for Today Interview</p>
                       <a href="/" className="btn btn-primary p-2 pr-4 mr-1">Like</a>
                       <a href="/" className="btn btn-primary p-2">Dislike</a>
                     </div>
                   </div>
                 </div>
+                <hr />
                 <div className="row">
-                  <div className="col-md-6">
-                    <img className="card-img-top" src={lipstickImg} alt="LipStick" />
+                  <div className="col-md-3">
+                    <img className="card-img-top" id="pictureImg" src={makeupImg} alt="MakeUp" />
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-9">
                     <div className="card-body">
-                      <h5 className="card-title">Stressed Out?</h5>
-                      <p className="card-text">Tips for getting relaxed</p>
+                      <h5 className="card-title">3 MINUTES MAKEUP FOR OFFICE LADY</h5>
+                      <p className="card-text">Quick, professional make up tips for office lady</p>
                       <a href="/" className="btn btn-primary p-2 pr-4 mr-1">Like</a>
                       <a href="/" className="btn btn-primary p-2">Dislike</a>
                     </div>
                   </div>
                 </div>
+                <hr />
                 <div className="row">
-                  <div className="col-md-6">
-                    <img className="card-img-top" src={lipstickImg} alt="LipStick" />
+                  <div className="col-md-3">
+                    <img className="card-img-top" id="pictureImg" src={stressImg} alt="Stress" />
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-9">
                     <div className="card-body">
-                      <h5 className="card-title">3 Minutes Make Up</h5>
-                      <p className="card-text">For Interview</p>
+                      <h5 className="card-title">STRESS OUT? 2 EASY WAYS TO STRETCH AT HOME</h5>
+                      <p className="card-text">Follow us, strech up your body, refresh your day!</p>
                       <a href="/" className="btn btn-primary p-2 pr-4 mr-1">Like</a>
                       <a href="/" className="btn btn-primary p-2">Dislike</a>
                     </div>
