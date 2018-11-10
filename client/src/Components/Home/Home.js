@@ -6,9 +6,8 @@ class Home extends Component {
   render() {
     return (
         <div className="container">
-            <h1 className="text-center">Beauty Recommentation</h1>
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-1">
                 <div className="dropdown">
                   <a className="btn btn-secondary dropdown-toggle" href="/" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     OutFit
@@ -20,8 +19,11 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
+              <div className="col-md-5">
+                <h1 style={{"font-size":"20px","font-weight": "bold"}}><strong>Fri </strong>Nov.11, 2018</h1>
+              </div>
               <div className="col-md-6">
-                <button className="float-right">Login</button>
+                <p className="float-right" style={{"font-size":"20px","font-weight": "bold"}}>Partly Cloudy, Long Island City</p>
               </div>
               <div className="col-md-9">
                 
