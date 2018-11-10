@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './Home.css';
 
@@ -35,7 +36,9 @@ class Home extends Component {
               </div>
               <div className="col-md-12">
                 <img className="img-fluid w-100 m-0" id="bannerImg" src={bannerImg} alt="Banner" />
-                <img className="rounded mx-auto d-block" id="calcularImg" src={calcularImg} alt="Calrcular" />
+                <Link to="/schedule">
+                  <img className="rounded mx-auto d-block" id="calcularImg" src={calcularImg} alt="Calrcular" />
+                </Link>
               </div>
               <div className="col-md-12">
                 
