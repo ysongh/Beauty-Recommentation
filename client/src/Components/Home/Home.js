@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import './Home.css';
 
+import ImageList from '../ImageList/ImageList';
+
 import bannerImg from '../../Img/banner.png';
 import calcularImg from '../../Img/calcular.png';
 import interviewImg from '../../Img/interview.jpg';
@@ -27,7 +29,7 @@ class Home extends Component {
         if(showMore){
             showImages = (
                 <div>
-                  <h1>Hello</h1>
+                  <ImageList />
                 </div>
             );
         }
@@ -78,7 +80,6 @@ class Home extends Component {
                       <h5 className="card-title">BEST OUTFIT ASPIRES MY DAY</h5>
                       <p className="card-text">What is My Best Business Casual for Today Interview</p>
                       <span><i class="far fa-heart"></i></span>
-                      
                     </div>
                     <button
                         type="button"
@@ -89,9 +90,9 @@ class Home extends Component {
                     }}className="btn btn-light">
                         See More
                     </button>
-                    {showImages}
                   </div>
                 </div>
+                {showImages}
                 <hr />
                 <div className="row">
                   <div className="col-md-3">
