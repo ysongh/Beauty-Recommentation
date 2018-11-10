@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 
 import lipstickImg from '../../Img/lipstick.png';
 import bannerImg from '../../Img/banner.png';
+import calcularImg from '../../Img/calcular.png';
 
 class Home extends Component {
   render() {
     return (
-        <div className="container">
+        <div className="container-fluid">
             <div className="row">
               <div className="col-md-1">
                 <div className="dropdown">
@@ -29,8 +30,13 @@ class Home extends Component {
               <div className="col-md-12">
                 <img className="img-fluid w-100" src={bannerImg} alt="Banner" />
               </div>
+              <div className="col-md-12">
+                <img className="rounded mx-auto d-block" src={calcularImg} alt="Calrcular" />
+              </div>
             </div>
             
+            <hr />
+            <button className="mx-auto d-block">Amanda</button>
             <hr />
               
               <div class="card">
