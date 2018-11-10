@@ -7,7 +7,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Beauty Recommentation</h1>
+        <div className="container">
+        <h1 className="text-center">Beauty Recommentation</h1>
         <div className="dropdown">
           <a className="btn btn-secondary dropdown-toggle" href="/" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Dropdown link
@@ -20,7 +21,6 @@ class App extends Component {
         </div>
         
         <hr />
-        <div className="container">
           
           <div class="card">
             <div className="row">
