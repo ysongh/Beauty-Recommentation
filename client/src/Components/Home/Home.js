@@ -22,16 +22,17 @@ class Home extends Component {
                 </div>
               </div>
               <div className="col-md-5">
-                <h1 style={{"font-size":"28px","font-weight": "bold"}}><strong>Fri </strong>Nov.11, 2018</h1>
+                <h1 style={{"fontSize":"28px","fontWeight": "bold"}}><strong>Fri </strong>Nov.11, 2018</h1>
               </div>
               <div className="col-md-6">
-                <p className="float-right" style={{"font-size":"20px","font-weight": "bold"}}>Partly Cloudy, Long Island City</p>
+                <p className="float-right" style={{"fontSize":"20px","fontWeight": "bold"}}>Partly Cloudy, Long Island City</p>
               </div>
               <div className="col-md-12">
                 <img className="img-fluid w-100" src={bannerImg} alt="Banner" />
               </div>
               <div className="col-md-12">
                 <img className="rounded mx-auto d-block" src={calcularImg} alt="Calrcular" />
+                <h1 className="text-center" style={{"fontSize":"28px","fontWeight": "bold"}}>Interview for Estee Lanuder</h1>
               </div>
             </div>
             
@@ -39,7 +40,7 @@ class Home extends Component {
             <button className="mx-auto d-block">Amanda</button>
             <hr />
               
-              <div class="card">
+              <div className="card">
                 <div className="row">
                   <div className="col-md-6">
                     <img className="card-img-top" src={lipstickImg} alt="LipStick" />
