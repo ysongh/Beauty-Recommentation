@@ -9,10 +9,29 @@ import interviewImg from '../../Img/interview.jpg';
 import makeupImg from '../../Img/makeup.png';
 import stressImg from '../../Img/stress.jpg';
 import beverageImg from '../../Img/beverage.jpg';
-import lotionImg from '../../Img/lotion.jpg'
+import lotionImg from '../../Img/lotion.jpg';
 
 class Home extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+        showMore: false
+    };
+  }
+  
   render() {
+    const {showMore} = this.state;
+        
+        let showImages;
+        
+        if(showMore){
+            showImages = (
+                <div>
+                  <h1>Hello</h1>
+                </div>
+            );
+        }
+        
     return (
         <div className="container-fluid">
             <div className="row">
@@ -59,7 +78,18 @@ class Home extends Component {
                       <h5 className="card-title">BEST OUTFIT ASPIRES MY DAY</h5>
                       <p className="card-text">What is My Best Business Casual for Today Interview</p>
                       <span><i class="far fa-heart"></i></span>
+                      
                     </div>
+                    <button
+                        type="button"
+                        onClick={() => {
+                        this.setState(prevState => ({
+                            showMore: !prevState.showMore
+                        }));
+                    }}className="btn btn-light">
+                        See More
+                    </button>
+                    {showImages}
                   </div>
                 </div>
                 <hr />
