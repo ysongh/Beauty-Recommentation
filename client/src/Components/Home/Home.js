@@ -54,10 +54,10 @@ class Home extends Component {
                   </div>
                   <div className="col-md-9">
                     <div className="card-body">
+                      <i class="far fa-trash-alt float-right"></i>
                       <h5 className="card-title">BEST OUTFIT ASPIRES MY DAY</h5>
                       <p className="card-text">What is My Best Business Casual for Today Interview</p>
-                      <a href="/" className="btn btn-primary p-2 pr-4 mr-1">Like</a>
-                      <a href="/" className="btn btn-primary p-2">Dislike</a>
+                      <span><i class="far fa-heart"></i></span>
                     </div>
                   </div>
                 </div>
