@@ -7,6 +7,8 @@ import calcularImg from '../../Img/calcular.png';
 import interviewImg from '../../Img/interview.jpg';
 import makeupImg from '../../Img/makeup.png';
 import stressImg from '../../Img/stress.jpg';
+import beverageImg from '../../Img/beverage.jpg';
+import lotionImg from '../../Img/lotion.jpg'
 
 class Home extends Component {
   render() {
@@ -82,6 +84,34 @@ class Home extends Component {
                     <div className="card-body">
                       <h5 className="card-title">STRESS OUT? 2 EASY WAYS TO STRETCH AT HOME</h5>
                       <p className="card-text">Follow us, strech up your body, refresh your day!</p>
+                      <a href="/" className="btn btn-primary p-2 pr-4 mr-1">Like</a>
+                      <a href="/" className="btn btn-primary p-2">Dislike</a>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div className="row">
+                  <div className="col-md-3">
+                    <img className="card-img-top" id="pictureImg" src={beverageImg} alt="Beverage" />
+                  </div>
+                  <div className="col-md-9">
+                    <div className="card-body">
+                      <h5 className="card-title">MORNING COFFEE WAKES YOU UP</h5>
+                      <p className="card-text">Four types of coffee you want to drink in the morning for your health</p>
+                      <a href="/" className="btn btn-primary p-2 pr-4 mr-1">Like</a>
+                      <a href="/" className="btn btn-primary p-2">Dislike</a>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div className="row">
+                  <div className="col-md-3">
+                    <img className="card-img-top" id="pictureImg" src={lotionImg} alt="Lotion" />
+                  </div>
+                  <div className="col-md-9">
+                    <div className="card-body">
+                      <h5 className="card-title">MOIST TIME: MAKE YOUR FACE ALIVE AGAIN</h5>
+                      <p className="card-text">It's time to fresh your skin! Take some tips from us!</p>
                       <a href="/" className="btn btn-primary p-2 pr-4 mr-1">Like</a>
                       <a href="/" className="btn btn-primary p-2">Dislike</a>
                     </div>
