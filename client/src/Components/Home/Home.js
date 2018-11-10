@@ -41,13 +41,11 @@ class Home extends Component {
                 </Link>
               </div>
               <div className="col-md-12">
-                
                 <h1 className="text-center" style={{"fontSize":"20px","fontWeight": "bold"}}>Interview for Estee Lanuder</h1>
               </div>
             </div>
-            
             <hr />
-            
+
             <p className="text-center">-- Tips for Amanda --</p>
             
               <div className="card">
@@ -71,10 +69,10 @@ class Home extends Component {
                   </div>
                   <div className="col-md-9">
                     <div className="card-body">
+                      <i class="far fa-trash-alt float-right"></i>
                       <h5 className="card-title">3 MINUTES MAKEUP FOR OFFICE LADY</h5>
                       <p className="card-text">Quick, professional make up tips for office lady</p>
-                      <a href="/" className="btn btn-primary p-2 pr-4 mr-1">Like</a>
-                      <a href="/" className="btn btn-primary p-2">Dislike</a>
+                      <span><i class="far fa-heart"></i></span>
                     </div>
                   </div>
                 </div>
@@ -85,10 +83,10 @@ class Home extends Component {
                   </div>
                   <div className="col-md-9">
                     <div className="card-body">
+                      <i class="far fa-trash-alt float-right"></i>
                       <h5 className="card-title">STRESS OUT? 2 EASY WAYS TO STRETCH AT HOME</h5>
                       <p className="card-text">Follow us, strech up your body, refresh your day!</p>
-                      <a href="/" className="btn btn-primary p-2 pr-4 mr-1">Like</a>
-                      <a href="/" className="btn btn-primary p-2">Dislike</a>
+                      <span><i class="far fa-heart"></i></span>
                     </div>
                   </div>
                 </div>
@@ -99,10 +97,10 @@ class Home extends Component {
                   </div>
                   <div className="col-md-9">
                     <div className="card-body">
+                      <i class="far fa-trash-alt float-right"></i>
                       <h5 className="card-title">MORNING COFFEE WAKES YOU UP</h5>
                       <p className="card-text">Four types of coffee you want to drink in the morning for your health</p>
-                      <a href="/" className="btn btn-primary p-2 pr-4 mr-1">Like</a>
-                      <a href="/" className="btn btn-primary p-2">Dislike</a>
+                      <span><i class="far fa-heart"></i></span>
                     </div>
                   </div>
                 </div>
@@ -113,10 +111,10 @@ class Home extends Component {
                   </div>
                   <div className="col-md-9">
                     <div className="card-body">
+                      <i class="far fa-trash-alt float-right"></i>
                       <h5 className="card-title">MOIST TIME: MAKE YOUR FACE ALIVE AGAIN</h5>
                       <p className="card-text">It's time to fresh your skin! Take some tips from us!</p>
-                      <a href="/" className="btn btn-primary p-2 pr-4 mr-1">Like</a>
-                      <a href="/" className="btn btn-primary p-2">Dislike</a>
+                      <span><i class="far fa-heart"></i></span>
                     </div>
                   </div>
                 </div>
