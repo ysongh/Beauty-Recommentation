@@ -13,12 +13,12 @@ class App extends Component {
           <div className="col-md-6">
             <div className="dropdown">
               <a className="btn btn-secondary dropdown-toggle" href="/" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown link
+                OutFit
               </a>
               <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a className="dropdown-item" href="/">Action</a>
-                <a className="dropdown-item" href="/">Another action</a>
-                <a className="dropdown-item" href="/">Something else here</a>
+                <a className="dropdown-item" href="/">Make Up</a>
+                <a className="dropdown-item" href="/">Health</a>
+                <a className="dropdown-item" href="/">Other</a>
               </div>
             </div>
           </div>
@@ -47,9 +47,10 @@ class App extends Component {
               </div>
               <div className="col-md-6">
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="/" className="btn btn-primary">Go somewhere</a>
+                  <h5 className="card-title">OutFit for Today</h5>
+                  <p className="card-text">Bussiness Casual</p>
+                  <a href="/" className="btn btn-primary p-2 pr-4 mr-1">Like</a>
+                  <a href="/" className="btn btn-primary p-2">Dislike</a>
                 </div>
               </div>
             </div>
@@ -59,9 +60,23 @@ class App extends Component {
               </div>
               <div className="col-md-6">
                 <div className="card-body">
-                  <h5 className="card-title">Card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="/" className="btn btn-primary">Go somewhere</a>
+                  <h5 className="card-title">Stressed Out?</h5>
+                  <p className="card-text">Tips for getting relaxed</p>
+                  <a href="/" className="btn btn-primary p-2 pr-4 mr-1">Like</a>
+                  <a href="/" className="btn btn-primary p-2">Dislike</a>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-6">
+                <img className="card-img-top" src={lipstickImg} alt="LipStick" />
+              </div>
+              <div className="col-md-6">
+                <div className="card-body">
+                  <h5 className="card-title">3 Minutes Make Up</h5>
+                  <p className="card-text">For Interview</p>
+                  <a href="/" className="btn btn-primary p-2 pr-4 mr-1">Like</a>
+                  <a href="/" className="btn btn-primary p-2">Dislike</a>
                 </div>
               </div>
             </div>
