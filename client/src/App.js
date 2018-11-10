@@ -9,14 +9,32 @@ class App extends Component {
       <div className="App">
         <div className="container">
         <h1 className="text-center">Beauty Recommentation</h1>
-        <div className="dropdown">
-          <a className="btn btn-secondary dropdown-toggle" href="/" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown link
-          </a>
-          <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a className="dropdown-item" href="/">Action</a>
-            <a className="dropdown-item" href="/">Another action</a>
-            <a className="dropdown-item" href="/">Something else here</a>
+        <div className="row">
+          <div className="col-md-6">
+            <div className="dropdown">
+              <a className="btn btn-secondary dropdown-toggle" href="/" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+              </a>
+              <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a className="dropdown-item" href="/">Action</a>
+                <a className="dropdown-item" href="/">Another action</a>
+                <a className="dropdown-item" href="/">Something else here</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6">
+            <button className="float-right">Login</button>
+          </div>
+          <div className="col-md-9">
+            
+          </div>
+          <div className="col-md-3">
+            <div class="card">
+              <div class="card-body">
+                <p style={{"font-size":"20px","font-weight": "bold"}}>2:00pm</p>
+                <p style={{"font-size":"20px","font-weight": "bold"}}>Gym</p>
+              </div>
+            </div>
           </div>
         </div>
         
