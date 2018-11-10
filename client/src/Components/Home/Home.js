@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './Home.css';
+
 import lipstickImg from '../../Img/lipstick.png';
 import bannerImg from '../../Img/banner.png';
 import calcularImg from '../../Img/calcular.png';
@@ -28,10 +30,11 @@ class Home extends Component {
                 <p className="float-right" style={{"fontSize":"20px","fontWeight": "bold"}}>Partly Cloudy, Long Island City</p>
               </div>
               <div className="col-md-12">
-                <img className="img-fluid w-100" src={bannerImg} alt="Banner" />
+                <img className="m-0" id="bannerImg" src={bannerImg} alt="Banner" />
+                <img className="rounded mx-auto d-block" id="calcularImg" src={calcularImg} alt="Calrcular" />
               </div>
               <div className="col-md-12">
-                <img className="rounded mx-auto d-block" src={calcularImg} alt="Calrcular" />
+                
                 <h1 className="text-center" style={{"fontSize":"28px","fontWeight": "bold"}}>Interview for Estee Lanuder</h1>
               </div>
             </div>
