@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import './Home.css';
-
 import InterviewList from '../ImageList/Interview';
 import ProductList from '../ImageList/Product';
 
-import bannerImg from '../../Img/banner.png';
-import calcularImg from '../../Img/calcular.png';
+import banner2Img from '../../Img/banner2.png';
+import calcular2Img from '../../Img/time2.png';
 import interviewImg from '../../Img/interview.jpg';
 import makeupImg from '../../Img/makeup.png';
 import stressImg from '../../Img/stress.jpg';
@@ -66,15 +64,15 @@ class Home extends Component {
                 <p className="float-right" style={{"fontSize":"20px","fontWeight": "bold"}}>Partly Cloudy, Long Island City</p>
               </div>
               <div className="col-md-12">
-                <Link to="/home2">
-                  <img className="img-fluid w-100 m-0" id="bannerImg" src={bannerImg} alt="Banner" />
+                <Link to="/">
+                  <img className="img-fluid w-100 m-0" id="bannerImg" src={banner2Img} alt="Banner" />
                 </Link>
                 <Link to="/schedule">
-                  <img className="rounded mx-auto d-block" id="calcularImg" src={calcularImg} alt="Calrcular" />
+                  <img className="rounded mx-auto d-block" id="calcularImg" src={calcular2Img} alt="Calrcular" />
                 </Link>
               </div>
               <div className="col-md-12">
-                <h1 className="text-center" style={{"fontSize":"20px","fontWeight": "bold"}}>Interview for Estee Lauder</h1>
+                <h1 className="text-center" style={{"fontSize":"20px","fontWeight": "bold"}}>Time to Blink</h1>
               </div>
             </div>
             <hr />
@@ -89,7 +87,7 @@ class Home extends Component {
                   <div className="col-md-9">
                     <div className="card-body">
                       <i class="far fa-trash-alt float-right"></i>
-                      <h5 className="card-title">BEST OUTFIT TO INSPIRE MY DAY</h5>
+                      <h5 className="card-title">BEST OUTFIT ASPIRES MY DAY</h5>
                       <p className="card-text">What is My Best Business Casual for Today Interview</p>
                       <span><i class="far fa-heart"></i></span>
                     </div>
@@ -113,7 +111,7 @@ class Home extends Component {
                   <div className="col-md-9">
                     <div className="card-body">
                       <i class="far fa-trash-alt float-right"></i>
-                      <h5 className="card-title">3-MINUTE MAKEUP FOR OFFICE LADY</h5>
+                      <h5 className="card-title">3 MINUTES MAKEUP FOR OFFICE LADY</h5>
                       <p className="card-text">Quick, professional make up tips for office lady</p>
                       <span><i class="far fa-heart"></i></span>
                     </div>
@@ -137,7 +135,7 @@ class Home extends Component {
                   <div className="col-md-9">
                     <div className="card-body">
                       <i class="far fa-trash-alt float-right"></i>
-                      <h5 className="card-title">STRESSED OUT? 2 EASY WAYS TO STRETCH AT HOME</h5>
+                      <h5 className="card-title">STRESS OUT? 2 EASY WAYS TO STRETCH AT HOME</h5>
                       <p className="card-text">Follow us, strech up your body, refresh your day!</p>
                       <span><i class="far fa-heart"></i></span>
                     </div>
@@ -165,7 +163,7 @@ class Home extends Component {
                   <div className="col-md-9">
                     <div className="card-body">
                       <i class="far fa-trash-alt float-right"></i>
-                      <h5 className="card-title">MOISTURE TIME: MAKE YOUR FACE ALIVE AGAIN</h5>
+                      <h5 className="card-title">MOIST TIME: MAKE YOUR FACE ALIVE AGAIN</h5>
                       <p className="card-text">It's time to fresh your skin! Take some tips from us!</p>
                       <span><i class="far fa-heart"></i></span>
                     </div>
