@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 
 import InterviewList from '../ImageList/Interview';
+import ProductList from '../ImageList/Product';
 
 import bannerImg from '../../Img/banner.png';
 import calcularImg from '../../Img/calcular.png';
@@ -38,7 +39,7 @@ class Home extends Component {
         if(showMoreProduct){
             productImages = (
                 <div>
-                  <InterviewList />
+                  <ProductList />
                 </div>
             );
         }

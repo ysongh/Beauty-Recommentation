@@ -5,7 +5,7 @@ import interview3Img from '../../Img/interview3.png';
 import interview4Img from '../../Img/interview4.jpg';
 import interview5Img from '../../Img/interview5.png';
 
-class ImageList extends Component {
+class Interview extends Component {
   render() {
     return (
         <div className="row">
@@ -34,4 +34,4 @@ class ImageList extends Component {
   }
 }
 
-export default ImageList;
+export default Interview;
